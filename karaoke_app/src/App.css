@@ -22,11 +22,12 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  background: var(--secondary);
 }
 
 .navbar {
-  background-color: var(--base-dark);
-  padding: 16px;
+  background-color: var(--secondary);
+  padding: 16px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -36,6 +37,7 @@ body {
   width: 100%;
   box-sizing: border-box;
   z-index: 100;
+  box-shadow: 0 2px 8px var(--shadow-color);
 }
 
 .logo {
