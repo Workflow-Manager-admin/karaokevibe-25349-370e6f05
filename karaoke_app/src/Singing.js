@@ -1,18 +1,15 @@
 import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "./App.css";
+import songs from "./data/songs";
 
 // PUBLIC_INTERFACE
 function Singing() {
   /** Singing interface stub: displays static lyrics and stub controls */
   const { id } = useParams();
 
-  // Mock song data lookup (replace/make dynamic in future)
-  const songDetails = {
-    1: { title: "Shape of You", artist: "Ed Sheeran", lyrics: "I'm in love with the shape of you..." },
-    2: { title: "Shallow", artist: "Lady Gaga & Bradley Cooper", lyrics: "I'm off the deep end, watch as I dive in..." },
-    3: { title: "Let It Go", artist: "Idina Menzel", lyrics: "Let it go, let it go, can't hold it back anymore..." }
-  }[id] || {};
+  // Lookup song data from centralized static songs data
+  const songDetails = songs.find((song) => String(song.id) === String(id)) || {};
 
   return (
     <div className="container" style={{ paddingTop: 80, maxWidth: 700 }}>
