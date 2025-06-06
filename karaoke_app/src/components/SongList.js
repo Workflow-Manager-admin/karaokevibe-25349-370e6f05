@@ -1,13 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "../App.css";
-
-// Mock data for stub implementation
-const songs = [
-  { id: 1, title: "Shape of You", artist: "Ed Sheeran" },
-  { id: 2, title: "Shallow", artist: "Lady Gaga & Bradley Cooper" },
-  { id: 3, title: "Let It Go", artist: "Idina Menzel" },
-];
+import songs from "../data/songs";
 
 // PUBLIC_INTERFACE
 function SongList() {
