@@ -83,9 +83,12 @@ body {
 
 .title {
   font-size: 3.5rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -1px;
   line-height: 1.2;
   margin: 0;
+  color: var(--accent);
+  text-shadow: 0 2px 14px var(--shadow-color), 0 0 4px var(--secondary);
 }
 
 .description {
