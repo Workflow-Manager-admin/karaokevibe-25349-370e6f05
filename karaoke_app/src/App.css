@@ -71,12 +71,14 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  background: linear-gradient(180deg, var(--secondary) 75%, rgba(25,20,20,0.88) 100%);
 }
 
 .subtitle {
-  color: var(--base-light);
+  color: var(--primary);
   font-weight: 500;
   font-size: 1.1rem;
+  text-shadow: 0 1px 4px var(--shadow-color);
 }
 
 .title {
