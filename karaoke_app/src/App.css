@@ -100,22 +100,30 @@ body {
 }
 
 .btn {
-  background-color: var(--base-light);
-  color: white;
+  background-color: var(--primary);
+  color: var(--secondary);
   border: none;
   border-radius: 4px;
   padding: 10px 20px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  letter-spacing: 0.5px;
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.18s, color 0.18s;
+  box-shadow: 0 2px 8px var(--shadow-color);
+  outline: none;
+}
+
+.btn:focus {
+  box-shadow: 0 0 0 2px var(--accent), 0 2px 8px var(--shadow-color);
 }
 
 .btn:hover {
-  background-color: #7691ff;
+  background-color: var(--accent);
+  color: var(--secondary);
 }
 
 .btn-large {
-  padding: 12px 24px;
-  font-size: 1.1rem;
+  padding: 12px 26px;
+  font-size: 1.13rem;
 }
